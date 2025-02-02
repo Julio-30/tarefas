@@ -50,6 +50,20 @@
       "top": -32.2,
       "left": 412.8,
       "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led2",
+      "top": 34.8,
+      "left": -111.4,
+      "attrs": { "color": "blue" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led3",
+      "top": 34.8,
+      "left": -63.4,
+      "attrs": { "color": "green" }
     }
   ],
   "connections": [
@@ -133,7 +147,11 @@
     [ "rgb20:VDD", "rgb25:VDD", "#8f4814", [ "h-9.6", "v-57.6" ] ],
     [ "rgb25:VDD", "rgb24:VDD", "#8f4814", [ "h0", "v-19.2", "h-57.6" ] ],
     [ "rgb24:VDD", "rgb23:VDD", "#8f4814", [ "h0", "v-19.2", "h-76.8" ] ],
-    [ "rgb23:VDD", "rgb22:VDD", "#8f4814", [ "h0", "v-19.2", "h-57.6" ] ]
+    [ "rgb23:VDD", "rgb22:VDD", "#8f4814", [ "h0", "v-19.2", "h-57.6" ] ],
+    [ "led3:A", "pico:GP12", "blue", [ "v9.6", "h115.2" ] ],
+    [ "led2:A", "pico:GP13", "blue", [ "v19.2", "h163.2" ] ],
+    [ "led3:C", "pico:GND.4", "black", [ "v28.8", "h96.4" ] ],
+    [ "led2:C", "pico:GND.4", "black", [ "v28.8", "h154" ] ]
   ],
   "dependencies": {}
 }
